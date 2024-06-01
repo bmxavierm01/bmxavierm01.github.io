@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+	<link rel="stylesheet" href="style1.css">
+    <title>INDEX_CONTACTO</title>
+	<link rel="icon" href="imagenes/favicon.png" type="image/png">
+</head>
+<body>
+    <header>
+        <h1>POLIMUSIC'S</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html" target="_blank">Inicio</a></li>
+                <li><a href="index_acerca.html" target="_blank">Acerca de</a></li>
+                <li><a href="index_nuestras.html" target="_blank">Nuestras listas</a></li>
+				<li class="desplegable">
+                  <a href="index_contacto.html" target="_blank">Contacto</a>
+                   <div class="lista_desplegable">
+                        <a href="index_contacto.html">Email</a>
+                        <a href="#redes">Redes sociales</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+	<main class="formulario">
+		<h2>Contáctanos para subir tu propia playlist</h2>
+		<form name="form" action="https://jkorpela.fi/cgi-bin/echo.cgi" method="post">
+		<input type="text" id="Apellidos" placeholder="Apellidos" size="40" >&nbsp &nbsp <input type="text" id="Nombre" placeholder="Nombre" size="40"><br><br>
+		<input type = "email" id = "Email" placeholder = "m@il" size = "87"><br><br>
+		<input type="date" id="Fecha" size="50">&nbsp &nbsp <input type="tel" id="Telefono" placeholder="Telefono" size="35"><br><br>
+		<p>Leer las <a href = "imagenes/condiciones.pdf" target = "_blank">condiciones de uso</a><br></p>
+		<input type="submit" value="Enviar" onclick="
+			var nombre = document.getElementById('Nombre').value;
+			var apellido = document.getElementById('Apellidos').value;
+			var email = document.getElementById('Email').value;
+			var fecha = document.getElementById('Fecha').value;
+			var tel = document.getElementById('Telefono').value;
+			if (nombre == '' || apellido == '' || email == '' || fecha == '' || tel == ''){  
+				alert('Porfavor rellene todos los datos');
+				}
+		">
+		</form>
+	</main>
+	<footer id="redes">
+        <p>&copy; 2024 Mi Página Web. Todos los derechos reservados.</p>
+        <p>Síguenos en:
+            <a href="https://twitter.com">Twitter</a> |
+            <a href="https://facebook.com">Facebook</a> |
+            <a href="https://instagram.com">Instagram</a>
+        </p>
+    </footer>
+</body>
+</html>

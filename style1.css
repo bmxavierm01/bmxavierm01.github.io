@@ -1,0 +1,221 @@
+/*__________________________COMUNES___________________________________-*/
+
+body{
+    font-family:Arial, sans-serif;
+    margin:0px;
+    padding:0px;
+	background-image:url(imagenes/fondopro.jpg);
+}
+header, footer, main, aside{
+    padding:20px;
+    margin-bottom:20px;
+    background-color:lightgrey;
+}
+header{
+    text-align:center;
+	background-color:black;
+}
+nav ul{
+    list-style-type:none;
+    padding:0px;
+}
+nav ul li{
+    display:inline;
+    margin-right:20px;
+}
+nav ul li a{
+    text-decoration:none;
+	color:white;
+}
+nav ul li div.lista_desplegable{
+    display:none;
+    position:absolute;
+    background-color:white;
+    z-index:1;
+}
+li.desplegable{
+	display:inline-block;
+}
+nav ul li div.lista_desplegable a{
+    color:black;
+    padding:12px;
+    text-decoration:none;
+    display:block;
+}
+nav ul li div.lista_desplegable a:hover{
+    background-color:lightgrey;
+}
+li.desplegable:hover div.lista_desplegable{
+    display:block;
+}
+main{
+    width:70%;
+}
+footer{
+    clear:both;
+    text-align:center;
+    font-size:0.8em;
+    color:grey;
+    padding:20px;
+}
+footer a{
+    color:black;
+    text-decoration:none;
+}
+a:hover{
+    text-decoration:underline;
+}
+h1{
+	color:white;
+}
+
+/*______________________________INDEX_______________________________________*/
+div.contenedor{
+	display:flex;
+    flex-wrap:wrap;
+	justify-content:space-between;
+}
+aside.valoraciones{
+    width:30%;
+    padding:20px;
+	float:right;
+	background-color:white;
+}
+aside.h2{
+    text-align:center;
+    color:black;
+}
+div.valoracion{
+    border-bottom:1px solid lightgrey;
+    padding:10px;
+}
+div.valoracion:last-child{
+    border-bottom:none;
+}
+div.estrellas{
+    color:yellow;
+    font-size:1.2em;
+}
+p.coment{
+    font-size:1em;
+    margin:5px;
+}
+p.usu{
+    font-size:0.9em;
+    color:grey;
+    text-align:right;
+}
+p.acerca{
+	margin-right:20px;
+}
+main.acerca{
+	display:flex;
+}
+img.imagen1{
+	width:15%;
+}
+article.novedades{
+	display:flex;
+}
+img.imagen2, img.imagen3, img.imagen4{
+	width:25%;
+	margin-bottom:6px;
+	transition:transform 0.3s ease;
+}
+img.imagen2:hover, img.imagen3:hover, img.imagen4:hover{
+	transform:scale(1.2);
+}
+div.img_novedad{
+	margin-left:300px;
+}
+div.publi1{
+	width:30%;
+	height:20%;
+	margin-left:400px;
+	margin-top:30px;
+	background-color:white;
+	padding:20px;
+	margin-bottom:20px;
+}
+img.publi1{
+	width:80%;
+}
+span.textopubli{
+	color:black;
+	float:left;
+	margin-right:5px;
+}
+button.descargar{
+	margin-left:280px;
+	background-color:blue;
+	color:white;
+}
+table{
+    width:100%;
+	border-collapse:collapse;
+	text-align:center;
+}
+
+/*____________________________________INDEX_ACERCA_____________________________________*/
+
+main.acerca_de{
+	display:flex;
+	width:55%;
+}
+main.acerca_de2{
+	float:right;
+	display:flex;
+	margin-bottom:180px;
+	width:55%;
+}
+img.acerca{
+	width:50%;
+	margin-left:100px;
+}
+img.acerca2{
+	width:70%;
+}
+
+/*_____________________________________________INDEX_NUESTRAS_________________________________________*/
+
+main.listas{
+    padding:20px;
+	background-color:grey;
+}
+section.lista{
+    background-color:white;
+    margin-bottom:20px;
+    padding:15px;
+    border-radius:5px;
+	display:flex;
+	justify-content:space-around;
+	align-items:center;
+}
+section.lista h2{
+    color:black;
+    margin-bottom:10px;
+}
+section.lista ol{
+    list-style:none;
+    padding:0px;
+}
+section.lista ol li{
+    padding:5px;
+    border-bottom:1px solid lightgrey;
+}
+section.lista ol li:last-child{
+    border-bottom:none;
+}
+img.imgcan{
+	width:100px;
+}
+
+/*____________________________INDEX_CONTACTO___________________________________________*/
+
+main.formulario{
+	width:60%;
+	text-align:center;
+	justify-content:center;
+	margin:auto;
+	margin-bottom:390px;
+}
